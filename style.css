@@ -1,0 +1,131 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+@media (max-width: 992px) {
+  .nav-none {
+    display: none;
+  }
+}
+
+.nav-none {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-link {
+  padding: 0px !important;
+}
+
+/* UTILITIES */
+.bg-white {
+  background-color: white;
+}
+
+.bg-primary {
+  background-color: rgb(14, 58, 87) !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.card {
+  border: 2px solid white !important;
+}
+
+.text-jumbo {
+  font-size: 120px;
+}
+
+.fs-0 {
+  font-size: 60px;
+}
+
+.text-sm-tengah {
+  text-align: left;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  position: relative;
+  height: 400px;
+  background-image: url("img/1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+/* about */
+.profile {
+  width: 300px !important;
+}
+
+.paralax {
+  background-image: url("img/1.jpg");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.287);
+}
+
+textarea {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.287);
+}
+
+@media (max-width: 768px) {
+  .text-sm-tengah {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768.99px) {
+  .text-jumbo {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 400px) {
+  .text-jumbo {
+    font-size: 75px;
+  }
+
+  .profile {
+    width: 70% !important;
+  }
+
+  .jumbotron {
+    height: 300px;
+  }
+}
+
+@media (max-width: 399.99px) {
+  .text-jumbo {
+    font-size: 45px;
+  }
+
+  .profile {
+    width: 50% !important;
+  }
+
+  .jumbotron {
+    height: 200px;
+  }
+}
