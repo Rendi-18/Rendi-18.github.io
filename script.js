@@ -42,14 +42,6 @@ function typeWriter() {
 window.addEventListener("load", typeWriter);
 // akhir ketik
 
-// profile
-// const profile = document.getElementById("profile");
-
-// window.addEventListener("load", function () {
-//   profile.style.width = "80%";
-// });
-// akhir profile
-
 const title = document.getElementById("title");
 
 window.addEventListener("load", function () {
@@ -57,13 +49,26 @@ window.addEventListener("load", function () {
   title.style.transition = "1s";
 });
 
-// const card = document.getElementsByClassName("card");
+// portfolio
+$(window).scroll(function () {
+  const wScroll = $(this).scrollTop();
+  if (wScroll > $("#portfolio").offset().top - 250) {
+    $(".thumbnail").each(function (i) {
+      setTimeout(function () {
+        $(".thumbnail").eq(i).addClass("muncul");
+      }, 350 * (i + 1));
+    });
+  }
+});
+// akhir portfolio
 
-// for (let i = 0; i < card.length; i++) {
-//   window.addEventListener("load", function () {
-//     setTimeout(function () {
-//       card[i].style.opacity = "100%";
-//       card[i].style.transition = "5s";
-//     }, 100 * (i + 1));
-//   });
-// }
+$(window).scroll(function () {
+  const wScroll = $(this).scrollTop();
+  if (wScroll > $("#contact").offset().top - 100) {
+    $(".icon").each(function (i) {
+      setTimeout(function () {
+        $(".icon").eq(i).addClass("muncul");
+      }, 500 * (i + 1));
+    });
+  }
+});

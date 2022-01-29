@@ -141,3 +141,25 @@ textarea {
     height: 200px;
   }
 }
+
+.thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.icon {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.icon.muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
