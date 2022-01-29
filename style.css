@@ -6,6 +6,10 @@
   }
 }
 
+#title {
+  opacity: 0%;
+}
+
 .nav-none {
   font-size: 30px;
   font-weight: bold;
@@ -52,6 +56,10 @@ body {
   text-align: left;
 }
 
+.raounded-max {
+  border-radius: 20px;
+}
+
 /* Jumbotron */
 
 .jumbotron {
@@ -77,6 +85,10 @@ body {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#about {
+  transition: 5s;
 }
 
 input {
